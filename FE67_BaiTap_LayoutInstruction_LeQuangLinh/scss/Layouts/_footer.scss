@@ -1,0 +1,101 @@
+footer{
+    margin-top: 4rem;
+    padding: 4rem 0;
+    background: #141415;
+    .footer__main{
+        color: $color-gray-2;
+        font-size: $fs-0_7;
+        font-weight: $fw-3;
+        letter-spacing: $letter-spacing-2;
+        h5{
+            color: $color-pink;
+            font-size: 1.2rem;
+        }
+        .footer__links{
+            ul{
+                list-style: none;
+                margin-top: 2rem;
+                li{
+                    padding-bottom: 1.3rem;
+                    i{
+                        color: $color-pink;
+                        font-size: $fs-0_9;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color-gray-2;
+                        padding-left: 0.8rem;
+                    }
+                }
+        
+            }
+        }
+        .footer__contact{
+             @extend .footer__links;
+             ul{
+                 li{
+                     display: block;
+                     font-size: $fs-0_9;
+                     font-weight: $fw-3;
+                     letter-spacing: 0;
+                     span{
+                         display: block;
+                         margin-left: 2.8rem;
+                     }
+                     a{
+                         padding: 0;
+                         font-weight: $fw-4;
+                     }
+                     i{
+                         color: $color-white;
+                         font-size: $fs-0_7;
+                         height: 1.5rem;
+                         width: 1.5rem;
+                         line-height: 1.5rem;
+                         border: 1px solid $color-gray-1;
+                         text-align: center;
+                         margin-right: 1rem;
+                     }
+                 }
+             }
+        }
+        p{
+            margin-top: 2rem;
+            line-height: 1.5rem;
+        }
+    }
+    .footer__bottom{
+        letter-spacing: $letter-spacing-2;
+        h5{
+            color: $color-pink;
+            font-size: 1.2rem;
+        }
+            .form-control{
+                width: 70%;
+                border-radius: 0;
+                padding: 1.3rem $pd-0_5;
+                font-size: $fs-0_8;
+                letter-spacing: $letter-spacing-2;
+                outline: none;
+                border:none;
+                &:focus{
+                    box-shadow: none;
+                }
+            }  
+        button{
+            padding: $pd-0_6 $pd-1;
+            width: 20%;
+            margin-left: 1rem;
+            outline: none;
+            border: none;
+            font-size: $fs-0_9;
+            color: $color-white;
+            letter-spacing: $letter-spacing-1;
+            background: $color-pink;
+            transition: $transition-0;
+            &:hover{
+                background: #ec1955;
+            }
+        }
+    }
+}

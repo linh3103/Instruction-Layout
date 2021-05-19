@@ -1,0 +1,33 @@
+// link mixins
+@mixin a_link($color, $fs) {
+    text-decoration: none;
+    color: $color;
+    font-size: $fs;
+}
+
+@mixin title() {
+    padding: $pd-4 0 $pd-2 0;
+    text-align: center;
+    h3{
+        color: $color-pink;
+        font-size: $fs-2_2;
+        letter-spacing: $letter-spacing-2;
+    }
+    span{
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: $fw-6;
+        letter-spacing: $letter-spacing-3;
+        position: relative;
+        padding: $pd-1;
+        &::after{
+            content: '';
+            height: 2px;
+            width: 15%;
+            background: $color-black-1;
+            display: block;
+            position: absolute;
+            top: 110%;
+            right: 44%;
+        }
+    }
+}

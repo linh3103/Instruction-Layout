@@ -1,0 +1,36 @@
+#stats{
+    margin-top: $mg-5;
+    background: url('.././images/banner2.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .stats__title{
+        @include title();
+        span{
+            color: $color-white;
+            font-weight: $fw-5;
+        }
+    }
+    .stats__content{
+        padding: $pd-2 0 $pd-3;
+        .stat__item{
+            text-align: center;
+            line-height: 5rem;
+            span{
+                color: $color-white;
+                font-size: $fs-2;
+            }
+            h4{
+                color: $color-pink;
+                font-size: 1.2rem;
+                letter-spacing: $letter-spacing-3;
+            }
+            p{
+                color: $color-white;
+                font-weight: $fw-3;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

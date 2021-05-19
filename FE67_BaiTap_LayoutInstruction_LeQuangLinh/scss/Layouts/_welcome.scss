@@ -1,0 +1,41 @@
+#welcome{
+    .welcome__title{
+        @include title();
+        width: 60%;
+        margin: auto;
+        p{
+            padding: $pd-4 0 $pd-2;
+            color: $color-gray-1;
+            font-size: $fs-0_8;
+            letter-spacing: $letter-spacing-1;
+            font-weight: $fw-4;
+        }
+    }
+    .welcome__item{
+        border: 1px solid $color-black-1;
+        padding: $pd-2 $pd-2 $pd-0_8;
+        line-height: 1.5rem;
+        letter-spacing: $letter-spacing-1;
+        span{
+            font-size: $fs-1_8;
+        }
+        h4{
+            color: $color-pink;
+            padding: $pd-1 0;
+        }
+        h5{
+            font-size: $fs-0_9;
+            font-weight: $fw-6;
+        }
+        p{
+            font-size: $fs-0_8;
+            color: $color-gray-1;
+        }
+        &:first-of-type{
+            border-right: none;
+        }
+        &:last-of-type{
+            border-left: none;
+        }
+    }
+}
